@@ -1,0 +1,27 @@
+pipline {
+agent any 
+stages {
+stage("SCM checkout"){
+steps{
+//checkout stage
+echo " checkout completed"
+stage("build"){
+steps{
+// build stage
+echo "build completed"
+}
+}
+stage("TEST"){
+steps{
+//test stage
+echo "test completed"
+} 
+}
+stage("deploy"){
+steps{
+// deploy completed 
+echo "deploy completed"
+}
+}
+}
+}

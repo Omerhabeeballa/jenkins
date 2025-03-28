@@ -5,6 +5,8 @@ stage("SCM checkout"){
 steps{
 //checkout stage
 echo " checkout completed"
+}
+}
 stage("build"){
 steps{
 // build stage
